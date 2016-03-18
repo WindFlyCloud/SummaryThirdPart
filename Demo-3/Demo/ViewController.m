@@ -37,10 +37,15 @@
     layout.footerHeight = 10;
     //几列显示
 //    layout.columnCount =3;
+    
     layout.minimumColumnSpacing = 5;
+    
     layout.minimumInteritemSpacing = 5;
+    
     CHTCollectionViewController *collection = [[CHTCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    
   [self.view addSubview:collection.collectionView];
+    
     [self addChildViewController:collection];
 }
 
